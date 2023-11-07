@@ -12,7 +12,7 @@ intents.messages = True
 
 bot=discord.Bot(intents=intents)
 
-for ext in ['cogs.commands.add', 'cogs.commands.random']:
+for ext in ['cogs.commands.add', 'cogs.commands.random', 'cogs.commands.list']:
     bot.load_extension(ext)
 
 bot.run(str(os.environ.get('TOKEN')))
