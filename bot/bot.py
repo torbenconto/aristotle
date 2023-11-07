@@ -12,9 +12,7 @@ from bot.core import constants, settings
 log = logging.getLogger(__name__)
 
 
-class Bot(commands.Bot, ABC):
-    """Base bot class."""
-
+class Aristotle(commands.Bot, ABC):
     name = settings.client.name
 
     def __init__(self, mock: bool = False, **kwargs):
