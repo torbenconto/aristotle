@@ -6,4 +6,6 @@ const client = new Client({
     intents: []
 });
 
+client.login(process.env.TOKEN)
+
 console.log(client); 
